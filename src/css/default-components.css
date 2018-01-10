@@ -278,8 +278,8 @@ i.fa.fa-envelope-o.icon-btn{
     background: #e74c3c;
     color: #fff;
 }
-div.pagination{
-    padding: 20px 0 0 0;
+.pagination{
+    padding: 60px 0 0 0;
 }
 
 /* ===== PAGINATION END ===== */
@@ -290,9 +290,9 @@ div.pagination{
     padding: 50px 0;
 }
 .card .card-img{
-    border: 1px solid #ebeeef; 
+    border: 1px solid #ebeeef;
     border-bottom: none;
-    box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+    box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
 }
 .card .card-img img{
     width: 100%;
@@ -301,27 +301,28 @@ div.pagination{
     background-color: #fff;
     border: 1px solid #ebeeef;
     border-top: none;
-    box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+    box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
 }
 .card:hover .card-img,
 .card:hover .card-description-wrapper{
-    box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
+    box-shadow: 0 16px 20px rgba(216, 216, 216, 0.75);
 }
-.card .card-description-wrapper .title-card{
+.card .card-description .title{
     color: #263238;
     font-weight: 500;
 }
-.card .card-description-wrapper .subtitle-card{
+.card .card-description .subtitle{
     color: #8bc34a;
     font-weight: 500;
     font-size: 14px;
 }
-.card .card-description-wrapper .price{
+.card .card-description .price{
     color: #263238;
     font-weight: 700;
     font-size: 20px;
 }
-.card .card-description-wrapper .card-text-info{
+.card .card-description-wrapper .card-text-info,
+.card .card-author-info .comment-heart{
     display: none;
 }
 .card .card-author-info{
