@@ -226,8 +226,9 @@
 }
 .sales-statement .date-form .date input{
     border: 1px solid #dedede;
-    height: 26px;
+    height: 28px;
     width: 134px;
+    padding-left: 15px;
     color: #444;
 }
 .sales-statement .date-form .date input:focus{
