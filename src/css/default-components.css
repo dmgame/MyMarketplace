@@ -1328,3 +1328,53 @@ ul.tags > li > a:focus{
     text-align: center;
 }
 /* ===== text end ===== */
+
+/* ===== SLIDER-RANGE START ===== */
+#slider-range{
+    margin: 41px 0 57px 0;
+    background-color: #f2f5f8;
+}
+#slider-range span{
+    outline: 0;
+}
+#slider-range .ui-widget.ui-widget-content{
+    border: none;
+    border-radius: 1px;
+}
+#slider-range .ui-widget-header{
+    background-color: #37474f;
+}
+#slider-range .min-value,
+ #slider-range .max-value{
+    position: absolute;
+    bottom: -30px;
+    color: #78909c;
+    font-weight: 400;
+    left: 50%;
+    transform: translate(-50%);
+}
+#slider-range .ui-slider .ui-slider-handle{
+    width: 16px;
+    height: 16px;
+}
+#slider-range .ui-slider-horizontal{
+    height: 5px;
+}
+#slider-range .ui-slider-horizontal .ui-slider-handle{
+    top: -6px;
+}
+#slider-range .ui-state-default, #slider-range .ui-widget-content .ui-state-default{
+    border: 4px solid #8bc34a;
+    border-radius: 10px;
+    background-color: #fff;
+}
+#slider-range .ui-state-active,
+#slider-range .ui-widget-content .ui-state-active,
+#slider-range .ui-widget-header .ui-state-active,
+#slider-range a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+	border: 4px solid #8bc34a;
+	background: #fff;
+}
+/* ===== SLIDER-RANGE END ===== */

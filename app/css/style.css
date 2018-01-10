@@ -27,6 +27,9 @@
     color: #90a4ae;
     float: right;
 }
+.all-items-page-container .aside-section .btn{
+    width: 100%;
+}
 .all-items-page-container .card.small-card{
     margin-top: 26px;
     margin-bottom: 15px;
@@ -34,7 +37,6 @@
 .all-items-page-container .card.medium-card{
     margin-top: 30px;
 }
-
 /* ===== all items page ===== */
 
 /* ===== product details page ===== */
@@ -228,6 +230,10 @@
     border: 1px solid #dedede;
     height: 26px;
     width: 134px;
+    color: #444;
+}
+.sales-statement .date-form .date input:focus{
+    outline: 0;
 }
 .sales-statement .date-form .date .fa{
     font-size: 12px;
@@ -235,6 +241,9 @@
     position: absolute;
     top: 7px;
     right: 11px;
+}
+.sales-statement .date-form span{
+    margin: 0 10px;
 }
 .sales-statement .date-form .btn{
     margin-left: 13px;
