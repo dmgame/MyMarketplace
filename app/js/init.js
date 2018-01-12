@@ -21,3 +21,6 @@ $(function () {
   });
   
 });
+
+// init slicknav
+$('.menu-nav').slicknav();

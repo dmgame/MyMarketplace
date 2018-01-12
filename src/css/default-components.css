@@ -1345,7 +1345,7 @@ ul.tags > li > a:focus{
     background-color: #37474f;
 }
 #slider-range .min-value,
- #slider-range .max-value{
+#slider-range .max-value{
     position: absolute;
     bottom: -30px;
     color: #78909c;
