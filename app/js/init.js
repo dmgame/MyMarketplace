@@ -20,7 +20,10 @@ $(function () {
     $('.modal').bPopup();
   });
   
+  // init slicknav
+  $('.menu-nav').slicknav({
+    appendTo: '.header .bottom-header .container',
+    label: ''
+  });
 });
 
-// init slicknav
-$('.menu-nav').slicknav();

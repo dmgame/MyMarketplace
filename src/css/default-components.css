@@ -815,6 +815,7 @@ i.fa.fa-envelope-o.icon-btn{
 .header .bottom-header{
     padding: 25px 0;
     background-color: #263238; 
+    position: relative;
 }
 .header .bottom-header a{
     color: #fff;
@@ -824,6 +825,15 @@ i.fa.fa-envelope-o.icon-btn{
 }
 .header .bottom-header .menu-nav a + a{
     margin-left: 40px;
+}
+
+@media(max-width: 991px){
+    .menu-nav{
+        display: none;
+    }
+    .slicknav_menu{
+        display: block;
+    }
 }
 
 /* ===== HEADER END ===== */
