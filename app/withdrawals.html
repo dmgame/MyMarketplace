@@ -30,6 +30,9 @@
     <!-- Srite -->
     <link rel="stylesheet" href="css/sprite.css">
 
+    <!-- Slick nav -->
+    <link rel="stylesheet" href="css/slicknav.css">
+
     <!-- Default Components -->
     <link rel="stylesheet" href="css/default-components.css">
 
@@ -266,10 +269,22 @@
 <!-- HEADER END -->
 
 <!-- MAIN START -->
-<main class="main">
+<main class="main withdrawals-page">
+    <section class="inner">
+        <div class="container">
+            <div class="inner-content text-white d-flex flex-column align-items-center">
+                <span>Premium WordPress Themes, Web Templates and Many More ...</span>
+                <form action="" class="inner-form d-flex justify-content-center">
+                    <input type="search" name="search" class="inner-search" placeholder="Search Your Keywords . . .">
+                    <i class="fa fa-search"></i>
+                </form>
+            </div>
+            
+        </div>
+    </section>
     <div class="container">
         <ul class="breadcrumb">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li class="active">Withdrawals</li>
         </ul>
         <!-- / Breadcrumb -->
@@ -279,50 +294,34 @@
             <div class="row d-flex">
                 <div class="col-md-6">
                     <div class="earnings bg-white">
-                        <div class="title medium-size-title text-medium">
+                        <div class="title-block">
                         Withdrawals Earnings
-                    </div>
+                        </div>
                     <div class="earnings-form">
                         <form action="" class="form">
                             <div class="form-row">
-                                <span class="form-text text-medium">Amount to Withdraw ($2000.00 Maximum) <span class="form-star">*</span></span>
+                                <span class="form-text text-medium">Amount to Withdraw ($2000.00 Maximum) </span>
                                 <input type="text" class="input" placeholder="Enter the amount you want to withdraw...">   
                             </div>
                             <!-- / input -->
                             <div class="form-row">
-                                <span class="form-text text-medium">Choose your Withdraw Method <span class="form-star">*</span></span>
-                                <div class="jq-selectbox jqselect" style="z-index: 10;">
-                                    <select name="select-country" id="">
-                                        <option value="usa">Select your card</option>
-                                        <option value="mongolia">Mongolia</option>
-                                    </select>
-                                    <div class="jq-selectbox__dropdown" style="height: auto; top: auto; bottom: 40px; display: none;">
-                                        <ul style="max-height: 493px;">
-                                            <li class="selected sel" style="">USA</li>
-                                            <li style="">Mongolia</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <span class="form-text text-medium">Choose your Withdraw Method </span>
+                                <select name="select-country" class="select" id="">
+                                    <option value="usa">Select your card</option>
+                                    <option value="mongolia">Mongolia</option>
+                                </select>
                             </div>
                             <!-- / select  -->
                             <div class="form-row">
-                                <span class="form-text text-medium">Your Account Name <span class="form-star">*</span></span>
-                                <div class="jq-selectbox jqselect" style="z-index: 10;">
-                                    <select name="select-country" id="">
-                                        <option value="usa">Select your card</option>
-                                        <option value="mongolia">Mongolia</option>
-                                    </select>
-                                    <div class="jq-selectbox__dropdown" style="height: auto; top: auto; bottom: 40px; display: none;">
-                                        <ul style="max-height: 493px;">
-                                            <li class="selected sel" style="">USA</li>
-                                            <li style="">Mongolia</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <span class="form-text text-medium">Your Account Name </span>
+                                <select name="select-country" class="select" id="">
+                                    <option value="usa">Select your card</option>
+                                    <option value="mongolia">Mongolia</option>
+                                </select>
                             </div>
                             <!-- / select  -->
                             <div class="form-row">
-                                <span class="form-text text-medium">Confirm your password <span class="form-star">*</span></span>
+                                <span class="form-text text-medium">Confirm your password </span>
                                 <input type="text" class="input" placeholder="Enter the amount you want to withdraw...">   
                             </div>
                             <!-- / input -->
@@ -333,7 +332,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="history bg-white">
-                        <div class="title medium-size-title medium-text">
+                        <div class="title-block">
                             Withdrawal History
                         </div>
                         <div class="history-table">
@@ -479,10 +478,17 @@
 
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- jQueryUI -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.1/dist/jquery.formstyler.min.js"></script>
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 <!-- Init plugins -->
 <script src="js/init.js"></script>
+<script src="js/range.js"></script>
+<script src="js/datepicker.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
 
 </body>
 </html>

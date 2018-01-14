@@ -1,5 +1,15 @@
+/* ===== HOME PAGE START ===== */
+.home-page .inner{
+    padding-top: 150px;
+    padding-bottom: 170px;
+}
+.home-page .inner .inner-content span{
+    margin-bottom: 55px;
+}
+.home-page .inner .inner-form .inner-search{
+    box-shadow: 0 1px 10px 0 rgba(124, 178, 64, 0.75);
+}
 /* ===== all items page ===== */
-
 .sort-controls-container{
     padding: 20px;
 }
@@ -213,14 +223,12 @@
 /* ===== LOGIN ===== */
 
 /* ===== SALES STATEMENT START ===== */
-.sales-statement .container{
-    border: 1px solid #dcdcdc;
-}
-.your-sales{
-    padding: 17px 21px 18px 31px;
-    border-bottom: 1px solid #d7d7d7; 
-}
+.sales-statement-page .inner{
 
+}
+.sales-statement .title-block{
+    padding: 17px 21px 18px 31px;
+}
 .sales-statement .date-form .date{
     position: relative;
 }
@@ -238,17 +246,23 @@
     font-size: 12px;
     color: #8cc148;
     position: absolute;
-    top: 7px;
+    top: 9px;
     right: 11px;
 }
 .sales-statement .date-form span{
     margin: 0 10px;
+    font-size: 12px;
+    color: #444;
+    font-weight: 400;
 }
 .sales-statement .date-form .btn{
     margin-left: 13px;
+    border: none;
 }
 .your-sales-table{
     padding: 35px 35px 80px 42px;
+    border: 1px solid #d7d7d7;
+    border-top: none;
 }
 .sales-statement .your-sales-table .title{
     font-size: 30px;
@@ -260,14 +274,13 @@
 /* ===== SALES STATEMENT END ===== */
 
 /* ===== WITHDRAWALS START ===== */
-.withdrawals .earnings,
-.withdrawals .history{
-    border: 1px solid #d7d7d7;
-}
-.withdrawals .earnings .title,
-.withdrawals .history .title{
-    border-bottom: 1px solid #d7d7d7;
+.withdrawals .title-block{
     padding: 17px 0 21px 31px;
+}
+.withdrawals .earnings-form,
+.withdrawals .history-table{
+    border: 1px solid #d7d7d7;
+    border-top: none;
 }
 .withdrawals .earnings .earnings-form{
     padding: 19px 40px 49px 37px;
@@ -278,6 +291,12 @@
 .withdrawals .earnings .form-row .form-text{
     display: inline-block;
     margin-bottom: 20px;
+    color: #263238;
+}
+.withdrawals .earnings .form-row .form-text::after{
+    content: '*';
+    font-size: 24px;
+    color: #8bc34a;
 }
 .withdrawals .earnings .form-row .input{
     width: 100%;

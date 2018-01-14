@@ -733,7 +733,7 @@ i.fa.fa-envelope-o.icon-btn{
 }
 /* ===== dropdown user end ===== */
 
-/* ===== header dropdawn end  ===== */
+/* ===== header dropdown end  ===== */
 
 /* ===== dropdown-categories ===== */
 
@@ -865,7 +865,25 @@ i.fa.fa-envelope-o.icon-btn{
 
 /* ===== HEADER END ===== */
 
-/* ===== FOOTER END ===== */
+/* ===== INNER START ===== */
+.inner{
+    background: url(../../app/img/inner-bg.jpg) no-repeat center / cover;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.inner .inner-content h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.inner .inner-content span{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 23px;
+}
+/* ===== INNER END ===== */
+
+/* ===== FOOTER START ===== */
 
 .footer{
     margin-top: 100px;
@@ -898,6 +916,9 @@ i.fa.fa-envelope-o.icon-btn{
 .footer .contact-company .adress-company{
     margin-bottom: 25px;   
 }
+.footer .contact-company .adress-company .fa{
+    padding-top: 5px;
+}
 .footer .contact-company .adress-company span{
     line-height: 24px;
 }
@@ -925,22 +946,43 @@ i.fa.fa-envelope-o.icon-btn{
     font-size: 20px;
     color: #fff;
 }
+.footer .subscribe-form{
+    margin-top: 20px;
+}
 .footer .email-adresss-form{
+    border: 1px solid #000;
     background-color: #2f3c43;
+}
+.footer .email-adresss-form input{
+    background-color: #2f3c43;
+    color: #697378;
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    height: 38px;
+    padding-left: 15px;
+    vertical-align: middle;
+    outline: none;
+}
+.footer .email-adresss-form button{
+    height: 38px;
+    width: 38px;
+    background-color: #8bc34a;
+    border: none;
+    color: #fff;
+    font-size: 14px;
 }
 .footer .copyright{
     padding-top: 25px;
     padding-bottom: 35px; 
 }
 
-/* ===== FOOTER ===== */
+/* ===== FOOTER END ===== */
 
-/* ===== form ===== */
-
-.inner-form{
-    text-align: center;
+/* ===== FORM START ===== */
+.inner .inner-form{
+    position: relative;
 }
-
 .inner-form .inner-search{
     width: 670px;
     height: 56px;
@@ -954,6 +996,13 @@ i.fa.fa-envelope-o.icon-btn{
     box-shadow: 0 1px 10px 1px #74797c;
     outline-color: #74797c;
 }
+.inner-form i{
+    font-size: 20px;
+    color: #78909c;
+    position: absolute;
+    top: 18px;
+    right: 25px;
+}   
 .upload-product .title{
     height: 63px;
     padding-left: 33px;
@@ -1077,9 +1126,9 @@ input:-ms-input-placeholder{
     font-size: 18px;
 }
 
-/* ===== form end ===== */
+/* ===== FORM END ===== */
 
-/* ===== select ===== */
+/* ===== SELECT START ===== */
 
 .jq-selectbox,
 .jq-select-multiple {
@@ -1152,7 +1201,7 @@ input:-ms-input-placeholder{
 	color: #707070;
 }
 .jq-selectbox.focused .jq-selectbox__select {
-	border: 1px solid #212121;
+	border: 1px solid #dcdcdc;
 }
 .jq-selectbox.disabled .jq-selectbox__select {
 	border-color: #CCC;
@@ -1197,7 +1246,7 @@ input:-ms-input-placeholder{
 	margin: 2px 0 0;
 	padding: 0;
 	border: 1px solid #CCC;
-	border-radius: 4px;
+	/* border-radius: 4px; */
 	background: #FFF;
 	-webkit-box-shadow: 0 2px 10px rgba(0,0,0,.2);
 	box-shadow: 0 2px 10px rgba(0,0,0,.2);
@@ -1232,15 +1281,16 @@ input:-ms-input-placeholder{
 }
 .jq-selectbox li {
 	min-height: 18px;
-	padding: 5px 10px 6px;
-	color: #231F20;
+	padding: 5px 10px 6px 15px;
+    color: #707070;
+    background-color: #f4f6f5;
 }
 .jq-selectbox li.selected {
 	background-color: #A3ABB1;
 	color: #FFF;
 }
 .jq-selectbox li:hover {
-	background-color: #08C;
+	background-color: #A3ABB1;
 	color: #FFF;
 }
 .jq-selectbox li.disabled {
@@ -1254,16 +1304,16 @@ input:-ms-input-placeholder{
 }
 .jq-selectbox li.optgroup:hover {
 	background: none;
-	color: #231F20;
+	color: #707070;
 	cursor: default;
 }
 .jq-selectbox li.option {
 	padding-left: 25px;
 }
 
-/* ====== select end ====== */
+/* ====== SELECT END ====== */
 
-/* ===== table ===== */
+/* ===== TABLE START ===== */
 
 .table{
     width: 100%;
@@ -1301,9 +1351,9 @@ input:-ms-input-placeholder{
     text-align: center;
 }
 
-/* ===== table end ===== */
+/* ===== TABLE END ===== */
 
-/* ===== TAGS ===== */
+/* ===== TAGS START ===== */
 
 .tags{
     -webkit-box-pack: center;
@@ -1331,8 +1381,15 @@ ul.tags > li > a:focus{
 
 /* ===== TAGS END ===== */
 
-/* ===== text ===== */
-
+/* ===== TEXT START ===== */
+.title-block{
+    border: 1px solid #d7d7d7;
+    font-size: 24px;
+    font-weight: 500;
+    color: #263238;
+    letter-spacing: 0;
+    background-color: #fff;
+}
 .title{
     font-size: 36px;
     color: #263238;
@@ -1364,7 +1421,7 @@ ul.tags > li > a:focus{
 .text-center{
     text-align: center;
 }
-/* ===== text end ===== */
+/* ===== TEXT END ===== */
 
 /* ===== SLIDER-RANGE START ===== */
 #slider-range{
