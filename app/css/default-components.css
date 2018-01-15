@@ -1361,6 +1361,7 @@ input:-ms-input-placeholder{
     justify-content: center;  
 }
 ul.tags li a{
+    display: inline-block;
     padding: 13px 26px;
     background: #fff;
     font-size: 14px;

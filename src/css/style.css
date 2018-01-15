@@ -9,7 +9,52 @@
 .home-page .inner .inner-form .inner-search{
     box-shadow: 0 1px 10px 0 rgba(124, 178, 64, 0.75);
 }
-/* ===== all items page ===== */
+.home-page .release-products{
+    padding-top: 120px;
+    padding-bottom: 110px;
+}
+.home-page .release-products .tags{
+    margin-top: 55px;
+    margin-bottom: 60px;
+}
+.home-page .release-products .container-fluid{
+    margin-bottom: 45px;
+}
+.home-page .release-products .card{
+    margin-bottom: 30px;
+}
+.home-page .release-products .btn + .btn{
+    margin-left: 10px;
+}
+
+.home-page .trending-products{
+    padding-top: 120px;
+    padding-bottom: 185px;
+}
+.home-page .trending-products .title{
+    margin-bottom: 45px;
+}
+
+.home-page .why-choose{
+    padding-top: 120px;
+    padding-bottom: 115px;
+}
+.home-page .why-choose .title{
+    margin-bottom: 80px;
+}
+.home-page .why-choose .why-choose-item:hover .title{
+    color: #8bc34a;
+}
+.home-page .why-choose .why-choose-item .title{
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.home-page .why-choose .why-choose-item p{
+    color: #b0bec5;
+}
+/* ===== HOME PAGE END ===== */
+
+/* ===== ALL ITEMS START ===== */
 .sort-controls-container{
     padding: 20px;
 }
@@ -47,16 +92,7 @@
 .all-items-page-container .card.medium-card{
     margin-top: 30px;
 }
-/* ===== all items page ===== */
-
-/* ===== product details page ===== */
-
-.product-full-img{
-    padding: 20px;
-    background-color: #ffffff;
-}
-
-/* ===== product details page ===== */
+/* ===== ALL ITEMS END ===== */
 
 /* ===== LOGIN ===== */
 
@@ -220,12 +256,9 @@
 
 /* ==== modal-login end ==== */
 
-/* ===== LOGIN ===== */
+/* ===== LOGIN END ===== */
 
 /* ===== SALES STATEMENT START ===== */
-.sales-statement-page .inner{
-
-}
 .sales-statement .title-block{
     padding: 17px 21px 18px 31px;
 }
