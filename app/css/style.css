@@ -4,15 +4,12 @@
     padding-bottom: 170px;
 }
 .home-page .inner .inner-content span{
+    display: inline-block;
     margin-bottom: 55px;
 }
 .home-page .inner .inner-form .inner-search{
     -webkit-box-shadow: 0 1px 10px 0 rgba(124, 178, 64, 0.75);
     box-shadow: 0 1px 10px 0 rgba(124, 178, 64, 0.75);
-}
-.home-page .release-products{
-    padding-top: 120px;
-    padding-bottom: 110px;
 }
 .home-page .release-products .tags{
     margin-top: 55px;
@@ -32,14 +29,10 @@
     padding-top: 120px;
     padding-bottom: 185px;
 }
-.home-page .trending-products .title{
+.home-page .trending-products .title.section-title{
     margin-bottom: 45px;
 }
 
-.home-page .why-choose{
-    padding-top: 120px;
-    padding-bottom: 115px;
-}
 .home-page .why-choose .title{
     margin-bottom: 80px;
 }
@@ -60,30 +53,83 @@
 .home-page .become-author .collage{
     position: relative;
 }
+.home-page .become-author .collage .collage-img{
+    -webkit-box-shadow: 0 0 45px rgba(181, 181, 181, 1);
+    box-shadow: 0 0 45px rgba(181, 181, 181, 1);
+    min-height: 440px;
+}
 .home-page .become-author .collage .become-author-content{
     position: absolute;
-    top: 116px;
-    bottom: 107px;
-    left: 226px;
-    right: 226px;
-    padding-right: 60px;
-    padding-left: 60px;
+    padding: 70px 55px 80px;
+    top: 50%;
+    left: 50%;
+    max-width: 650px;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .home-page .become-author .collage .become-author-content .title{
     font-size: 30px;
 }
 .home-page .free-tutorials{
-    padding-top: 116px;
-    padding-bottom: 120px;
     margin-bottom: -100px;
 }
 .home-page .free-tutorials .tutorial-items-block{
     margin-top: 55px;
 }
+.home-page .free-tutorials .tutorial-item .tutorial-item-img{
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
 .home-page .free-tutorials .tutorial-item .tutorial-description{
     padding-top: 40px;
     padding-bottom: 35px;
     background-color: #f8f8f8;
+}
+
+@media (max-width: 991px){
+    .home-page .trending-products{
+        padding-top: 90px;
+        padding-bottom: 145px;
+    }
+    .home-page .why-choose .why-choose-item{
+        padding-bottom: 45px;
+    }
+    .home-page .free-tutorials .tutorial-item{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 767px){
+    .home-page .title.section-title{
+        font-size: 30px;
+    }
+    .home-page .release-products .tags{
+        display: none;
+    }
+    .home-page .become-author .collage .become-author-content{
+        padding: 50px 15px 60px;
+    }
+}
+@media (max-width: 599px){
+    .home-page .trending-products{
+        padding-top: 50px;
+        padding-bottom: 115px;
+    }
+    .home-page .become-author .collage .become-author-content{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .home-page .become-author .collage .become-author-content .btn{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 479px){
+    .home-page .free-tutorials .tutorial-item .tutorial-description .title{
+        font-size: 20px;
+    }
 }
 /* ===== HOME PAGE END ===== */
 
