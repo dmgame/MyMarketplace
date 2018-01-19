@@ -8,14 +8,6 @@ $(function () {
   // init form styler for select
   $('select').styler();
 
-
-
-  // open modal
-  let openModalBtn = $('.open-login-modal');
-
-  openModalBtn.on('click', function () {
-    $('.modal').bPopup();
-  });
   
   // init slicknav
   $('.menu-nav').slicknav({

@@ -301,24 +301,26 @@
 
 /* ==== main-login ==== */
 
-.main-login .inner-login{
+.main-login .inner{
     background: url('../../app/img/inner-login.jpg') no-repeat center / cover;
-    height: 60vh;
+    height: 620px;
+    padding-top: 160px;
 }
-.main-login .inner-login .inner-login-content{
+.main-login .inner .inner-content p{
     font-size: 48px;
     font-weight: bold;
     text-transform: uppercase;
 }
-
-.main-login .inner-login .inner-login-content .inner-form{
-    position: relative;
+.main-login .inner .inner-content p span{
+    font-size: inherit;
+}
+.main-login .inner .inner-content .inner-form{
     margin-top: 105px;
 }
-.main-login .inner-login .inner-login-content .inner-form .inner-search{
+.main-login .inner .inner-content .inner-form .inner-search{
     box-shadow: 0 1px 10px 0 rgba(124, 178, 64, 0.75);
 }
-.main-login .inner-login .inner-login-content .inner-form i{
+.main-login .inner .inner-content .inner-form i{
     font-size: 20px;
     position: absolute;
     top: 18px;
@@ -560,5 +562,38 @@
 }
 .withdrawals .history-table .table tbody tr:nth-child(1) td:nth-child(4){
     color: #444;
+}
+@media (max-width: 991px){
+    .withdrawals > .container > .row{
+        flex-direction: column;
+    }
+    .withdrawals .earnings{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 767px){
+    .withdrawals .title-block{
+        padding: 15px;
+        text-align: center;
+    }
+    .withdrawals .earnings .earnings-form{
+        padding: 20px;
+    }
+}
+@media (max-width: 599px){
+    .withdrawals .title-block{
+        font-size: 20px;
+    }
+}
+@media (max-width: 479px){
+    .withdrawals .earnings .form-row .form-text{
+        font-size: 13px;
+    }
+    .withdrawals .earnings .form-row .form-text::after{
+        font-size: 20px;
+    }
+    .withdrawals .earnings-form .btn{
+        width: 100%;
+    }
 }
 /* ===== WITHDRAWALS END ===== */
