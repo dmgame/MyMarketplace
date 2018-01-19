@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+    <title>Pages</title>
 
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
@@ -49,7 +49,7 @@
     <section class="top-header">
         <div class="container d-flex justify-content-between">
             <div class="logo">
-                <a href=""><img src="img/logo.png" alt="logo"></a>
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
             </div>
             <!-- logo -->
             <div class="auth-controls d-flex flex-row align-items-center">
@@ -252,13 +252,14 @@
     <section class="bottom-header">
         <div class="container d-flex justify-content-between align-items-center">
             <nav class="menu-nav d-flex justify-content-between align-items-center">
+                <a href="index.html">Home</a>
                 <a href="#">About</a>
                 <a href="#">WordPress</a>
                 <a href="#">Joomla</a>
                 <a href="#">PSD</a>
                 <a href="#">Plugins</a>
                 <a href="#">Components</a>
-                <a href="#">Pages</a>
+                <a href="all-items.html" class="active">Pages</a>
                 <a href="#">Contact</a>
                 <a href="#">Help</a>
             </nav>
@@ -270,7 +271,7 @@
 <!-- HEADER END -->
 
 <!-- MAIN START -->
-<main class="main all-items-page">
+<main id="all-items-page">
     <section class="inner">
         <div class="container">
             <div class="inner-content text-white text-center">
@@ -293,9 +294,9 @@
     <div class="all-items-page-container">
         <div class="container">
             <div class="row d-flex flex-wrap">
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-6 col-xs-8 mobile-aside">
                     <aside class="aside">
-                        <div class="aside-section">
+                        <div class="aside-section categories">
                             <div class="aside-section-title">
                                 <span>Categories</span>
                             </div>
@@ -325,7 +326,7 @@
                             </div>
                         </div>
                         <!-- / aside-section -->
-                        <div class="aside-section">
+                        <div class="aside-section price-range">
                             <div class="aside-section-title">
                                 <span>Price Range</span>
                             </div>
@@ -335,7 +336,7 @@
                                 <i class="fa fa-search icon-btn" aria-hidden="true"></i>Search</a>
                         </div>
                         <!-- / aside-section -->
-                        <div class="aside-section">
+                        <div class="aside-section top-sellers">
                             <div class="aside-section-title">
                                 <span>Top 10 Sellers</span>
                             </div>
@@ -458,20 +459,24 @@
                 <!-- / col-md-3 -->
                 <div class="col-md-9">
                     <div class="sort-controls-container bg-white border-grey d-flex justify-content-between align-items-center">
+                        <button class="mobile-aside-toggle">
+                            <i class="fa fa-bars"></i>
+                        </button>
                         <div class="sort-by">
                             <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
                             <span>Sort by: New Items</span>
                             <i class="fa fa-sort" aria-hidden="true"></i>
                         </div>
                         <div class="change-view">
-                            <i class="fa fa-th-large change-icon active"></i>
-                            <i class="fa fa-th-list change-icon"></i>
+                            <i class="fa fa-th-large change-icon active" id="grid-thumbs"></i>
+                            <i class="fa fa-th-list change-icon" id="grid-list"></i>
                         </div>
                     </div>
                     <!-- / sort-controls-container -->
                     <div class="all-items-container">
-                        <div class="row d-flex flex-wrap">
-                            <div class="col-md-4 card medium-card">
+                            <div class="overlay"></div>
+                        <div class="row d-flex flex-wrap justify-content-center">
+                            <div class="col-md-4 col-sm-6 col-xs-6 card medium-card">
                                 <div class="card-img">
                                     <a href="" class="d-flex">
                                         <img src="img/medium-card-img.jpg" alt="">
@@ -522,7 +527,7 @@
                                 <!-- / card -->
                             </div>
                             <!-- / col-md-4 -->
-                            <div class="col-md-4 card medium-card">
+                            <div class="col-md-4 col-sm-6 col-xs-6 card medium-card">
                                 <div class="card-img">
                                     <a href="" class="d-flex">
                                         <img src="img/medium-card-img.jpg" alt="">
@@ -573,7 +578,7 @@
                                 <!-- / card -->
                             </div>
                             <!-- / col-md-4 -->
-                            <div class="col-md-4 card medium-card">
+                            <div class="col-md-4 col-sm-6 col-xs-6 card medium-card">
                                 <div class="card-img">
                                     <a href="" class="d-flex">
                                         <img src="img/medium-card-img.jpg" alt="">
@@ -624,7 +629,7 @@
                                 <!-- / card -->
                             </div>
                             <!-- / col-md-4 -->
-                            <div class="col-md-4 card medium-card">
+                            <div class="col-md-4 col-sm-6 col-xs-6 card medium-card">
                                 <div class="card-img">
                                     <a href="" class="d-flex">
                                         <img src="img/medium-card-img.jpg" alt="">
@@ -675,7 +680,7 @@
                                 <!-- / card -->
                             </div>
                             <!-- / col-md-4 -->
-                            <div class="col-md-4 card medium-card">
+                            <div class="col-md-4 col-sm-6 col-xs-6 card medium-card">
                                 <div class="card-img">
                                     <a href="" class="d-flex">
                                         <img src="img/medium-card-img.jpg" alt="">
@@ -726,7 +731,7 @@
                                 <!-- / card -->
                             </div>
                             <!-- / col-md-4 -->
-                            <div class="col-md-4 card medium-card">
+                            <div class="col-md-4 col-sm-6 col-xs-6 card medium-card">
                                 <div class="card-img">
                                     <a href="" class="d-flex">
                                         <img src="img/medium-card-img.jpg" alt="">
@@ -777,7 +782,7 @@
                                 <!-- / card -->
                             </div>
                             <!-- / col-md-4 -->
-                            <div class="col-md-4 card medium-card">
+                            <div class="col-md-4 col-sm-6 col-xs-6 card medium-card">
                                 <div class="card-img">
                                     <a href="" class="d-flex">
                                         <img src="img/medium-card-img.jpg" alt="">
@@ -828,7 +833,7 @@
                                 <!-- / card -->
                             </div>
                             <!-- / col-md-4 -->
-                            <div class="col-md-4 card medium-card">
+                            <div class="col-md-4 col-sm-6 col-xs-6 card medium-card">
                                 <div class="card-img">
                                     <a href="" class="d-flex">
                                         <img src="img/medium-card-img.jpg" alt="">
@@ -879,7 +884,7 @@
                                 <!-- / card -->
                             </div>
                             <!-- / col-md-4 -->
-                            <div class="col-md-4 card medium-card">
+                            <div class="col-md-4 col-sm-6 col-xs-6 card medium-card">
                                 <div class="card-img">
                                     <a href="" class="d-flex">
                                         <img src="img/medium-card-img.jpg" alt="">
@@ -930,7 +935,7 @@
                                 <!-- / card -->
                             </div>
                             <!-- / col-md-4 -->
-                            <div class="col-md-4 card medium-card">
+                            <div class="col-md-4 col-sm-6 col-xs-6 card medium-card">
                                 <div class="card-img">
                                     <a href="" class="d-flex">
                                         <img src="img/medium-card-img.jpg" alt="">
@@ -981,7 +986,7 @@
                                 <!-- / card -->
                             </div>
                             <!-- / col-md-4 -->
-                            <div class="col-md-4 card medium-card">
+                            <div class="col-md-4 col-sm-6 col-xs-6 card medium-card">
                                 <div class="card-img">
                                     <a href="" class="d-flex">
                                         <img src="img/medium-card-img.jpg" alt="">
@@ -1032,7 +1037,7 @@
                                 <!-- / card -->
                             </div>
                             <!-- / col-md-4 -->
-                            <div class="col-md-4 card medium-card">
+                            <div class="col-md-4 col-sm-6 col-xs-6 card medium-card">
                                 <div class="card-img">
                                     <a href="" class="d-flex">
                                         <img src="img/medium-card-img.jpg" alt="">
@@ -1184,9 +1189,12 @@
     </div>
     <!-- / container -->
     <hr>
-    <div class="copyright d-flex">
-        <p class="m-auto">© 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</p>
+    <div class="container">
+        <div class="copyright d-flex">
+            <p class="m-auto">© 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</p>
+        </div>
     </div>
+    
 </footer>
 <!-- FOOTER END -->
 
@@ -1198,11 +1206,15 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.1/dist/jquery.formstyler.min.js"></script>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
 <!-- Init plugins -->
-<script src="js/init.js"></script>
 <script src="js/range.js"></script>
 <script src="js/datepicker.js"></script>
 <script src="js/jquery.slicknav.min.js"></script>
+<script src="js/init.js"></script>
+
+<!-- Aside mobile-->
+<script type="text/javascript" src="js/aside.js"></script>
 
 </body>
 </html>
