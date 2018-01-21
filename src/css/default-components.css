@@ -378,33 +378,6 @@ button:hover{
     margin-right: 0;
 }
 
-.card.small-row-card{
-    display: flex;
-}
-.card-small-row-card .card-img{
-    border: none;
-    border-bottom: 1px solid #ebeeef;
-}
-.card.small-row-card .card-description-wrapper{
-    padding: 17px 15px 8px 20px;
-    border: none;
-    border-bottom: 1px solid #ebeeef;
-}
-.card.small-row-card .card-description .item-info{
-    flex-direction: column;
-}
-.card.small-row-card .card-description .title{
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-.card.small-row-card .card-description .subtitle{
-    font-size: 12px;
-}
-.card.small-row-card .card-description .price{
-    font-size: 18px;
-    margin-top: 10px;
-}
-
 .card-items-slider .large-card .card-img a{
     height: 250px;
 }
@@ -1224,6 +1197,61 @@ ul.tags > li > a:focus{
 }
 
 /* ===== TAGS END ===== */
+
+/* ===== Mobile tags ===== */
+.mobile-list-wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.mobile-list{
+    width: 100%;
+    color: #263238;
+    font-weight: 500;
+    font-size: 14px;
+}
+.mobile-list .current{
+    padding: 15px 30px;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.mobile-list .current .fa-close{
+    display: none;
+}
+.mobile-list .current.selected .fa-close{
+    display: block;
+}
+.mobile-list .current.selected .fa-chevron-down{
+    display: none;
+}
+.mobile-list .dropdown-list{
+    background-color: #fff;
+    padding: 15px 30px;
+    display: none;
+}
+.mobile-list .dropdown-list ul li a{
+    padding: 10px 0;
+    display: block;
+}
+
+@media (max-width: 767px){
+    .mobile-list-wrap{
+        display: block;
+    }
+}
+/* ===== Mobile tags end ===== */
 
 /* ===== TEXT START ===== */
 .title-block{
