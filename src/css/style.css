@@ -122,6 +122,9 @@
     .home-page .free-tutorials .tutorial-item .tutorial-description .title{
         font-size: 20px;
     }
+    .home-page .title.section-title{
+        font-size: 24px;
+    }
 }
 /* ===== HOME PAGE END ===== */
 
